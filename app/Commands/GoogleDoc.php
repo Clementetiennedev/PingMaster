@@ -48,7 +48,8 @@ class GoogleDoc extends Command
             ->title('Liste des liens Google Doc')
             ->content('DKP/WorldBoss : https://docs.google.com/spreadsheets/d/1uIz_mRvwPzU1SM17gNQchy3quw3R8IO05r4bTT2sGJA/edit?gid=1823348681#gid=1823348681
             
-            Guide quotidienne : https://docs.google.com/document/d/1xuAFy7wAOJ-tkh0fGnucRbJns_Ob7ELlucCo7SNAqg0/edit?tab=t.0')
+            Guide quotidienne : 
+            https://docs.google.com/document/d/1xuAFy7wAOJ-tkh0fGnucRbJns_Ob7ELlucCo7SNAqg0/edit?tab=t.0')
             ->send($message);
     }
 }
