@@ -18,7 +18,7 @@ class PingDynamicEvent extends Service
     public function handle(): void
     {
         $now = Carbon::now('Europe/Paris')->format('H:i');
-        $channel = $this->discord()->getChannel('1293158820465475584');
+        $channel =('1293164221575725066');
         $eventLogo = 'https://gameslantern.com/storage/sites/throne-and-liberty/events/wolf-hunting-contest-1-1.png';
         $bossLogo = "https://gameslantern.com/storage/sites/throne-and-liberty/events/manticus-1-8.png";
         $WorldBossRoleId = "1295317528251338835";
