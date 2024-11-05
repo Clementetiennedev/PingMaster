@@ -60,7 +60,7 @@ class MsgToStaff extends Command
             return;
         }else{
             $this
-                ->message('✅ Le message a bien était envoyé ! Merci de ta confiance ✅')
+                ->message('✅ Le message a bien été envoyé ! Merci de ta confiance ✅')
                 ->authorName('')
                 ->authorIcon('')
                 ->authorUrl('')
