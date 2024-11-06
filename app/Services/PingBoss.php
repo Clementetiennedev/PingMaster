@@ -11,7 +11,7 @@ class PingBoss extends Service
      * The service interval.
      */
     protected int $interval = 60;
-    protected array $sendTimes = ['11:50', '14:50', '17:50', '20:50', '23:50'];
+    protected array $sendTimes = ['11:50', '14:50', '20:50', '23:50'];
     /**
      * Handle the service.
      */
