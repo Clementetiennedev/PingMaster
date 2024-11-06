@@ -32,7 +32,7 @@ class GetAvatarWithId extends Command
      *
      * @var bool
      */
-    protected $hidden = false;
+    protected $hidden = true;
 
     /**
      * Handle the command.

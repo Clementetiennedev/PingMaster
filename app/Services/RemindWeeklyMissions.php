@@ -42,7 +42,6 @@ class RemindWeeklyMissions extends Service
         
         // Trouver la date et l'heure du prochain jour spécifique (dimanche ou lundi)
         $nextEvent = Carbon::parse("next $dayOfWeek $hour:$minute");
-        $this->console()->log($nextEvent);
         // Si l'heure est déjà passée aujourd'hui, ajuster pour la semaine prochaine
         if ($nextEvent->isPast()) {
             $nextEvent->addWeek();
@@ -50,8 +49,6 @@ class RemindWeeklyMissions extends Service
 
         // Calculer le délai jusqu'au prochain message
         $delay = $now->diffInSeconds($nextEvent, false);
-        $channelId = '1293158820465475584'; // Remplacez par votre ID de canal
-        $channel = $this->discord()->getChannel($channelId);
         
         // Planifier l'envoi du message avec un délai
         Loop::addTimer($delay, function() use ($message) {
