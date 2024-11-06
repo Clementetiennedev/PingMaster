@@ -19,7 +19,6 @@ class PingBoss extends Service
     {
         $now = Carbon::now('Europe/Paris')->format('H:i');
         $channel = ('1293164221575725066');
-        $eventLogo = 'https://gameslantern.com/storage/sites/throne-and-liberty/events/wolf-hunting-contest-1-1.png';
         $bossLogo = "https://gameslantern.com/storage/sites/throne-and-liberty/events/manticus-1-8.png";
         $WorldBossRoleId = "1295317528251338835";
     
@@ -33,7 +32,7 @@ class PingBoss extends Service
                 ->authorName('')
                 ->authorIcon('')
                 ->authorUrl('')
-                ->imageUrl($bossLogo)
+                ->thumbnailUrl($bossLogo)
                 ->field('Servers :', 'All EU servers')
                 ->field('', '')
                 ->color(16711680)
