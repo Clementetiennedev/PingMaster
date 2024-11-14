@@ -11,7 +11,7 @@ class PingDynamicEvent extends Service
      * The service interval.
      */
     protected int $interval = 60;
-    protected array $sendTimes = ['01:50', '04:50', '7:50', '10:50', '13:50', '16:50', '19:50', '22:50'];
+    protected array $sendTimes = ['02:50', '05:50', '8:50', '11:50', '14:50', '17:50', '20:50', '23:50'];
     /**
      * Handle the service.
      */
